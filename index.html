@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script>
+      function findCat(){
+        let answer = document.getElementById("textArea").value 
+        console.log(answer)
+        //let newElement = document.createElement("p")
+        if(answer == "yes")
+          var newS = "You found my cat"
+        else 
+          var newS = "Help me find my cat"
+
+        
+        document.getElementById("message").innerHTML = newS
+
+        
+      }
+      
+    </script>
+  </head>
+
+  <body>
+    <h1>
+      Have you seen Dave the cat?
+    </h1>
+    <textarea id = "textArea">
+
+    </textarea>
+    <button onclick = "findCat()">
+      Find Dave!
+    </button>
+    <h2 id = "message">
+
+    </h2>
+    
+  </body>
+</html>
